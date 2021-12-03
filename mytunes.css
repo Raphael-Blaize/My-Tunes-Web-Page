@@ -63,6 +63,7 @@ a{
     text-align: center;
     position: relative;
     top: -220px;
+    line-height: 1.3;
 }
 
 #section-b{
@@ -75,7 +76,6 @@ a{
     justify-content: center;
     flex-direction: column;
     background-color: #252529;
- 
 }
 
 .music-content{
@@ -135,14 +135,109 @@ a{
 .container-fluid img{
     position: relative;
     top: -200px;
+    margin-bottom: -150px;
+}
 
+.container-movie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:white;
+    color: black;
+    opacity: 0.9;
+}
+
+.container-movie h3{
+    margin-top: 80px;
+    font-size: 2rem;
+}
+
+.container-movie p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 10em;
+    position: relative;
+    top: -190px;
+    line-height: 1.8;
+}
+
+.container-movie button{
+    background-color: #103063;
+    border: none;
+    padding: 20px;
+    position: relative;
+    top: -360px;
+    
+}
+
+.container-movie img{
+    position: relative;
+    top:-360px;
+    margin-bottom: -300px;
+}
+
+.container-movie button:hover{
+    background-color:#143f85;
+    cursor: pointer;
+    transition: ease-out 3s;
 }
 
 
+.container-ent{
+    background-image: url("file:///C:/Users/Raphael%20Blaize/Pictures/section-bg%20(4).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ent-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ent-content h3{
+    font-size: 2rem;
+    font-weight: 800;
+    position: relative;
+    margin-top: 300px;
+}
+
+.ent-content p{
+    text-align: center;
+    font-size: 1.3rem;
+    margin:140px;
+    position: relative;
+    top: -140px;
+    line-height: 1.3;
+}
+
+@media(max-width: 3760px){
+    .header-content{
+        position: relative;
+        top: 290px;
+    }
+}
+
+@media(max-width: 2992px){
+    .header-content{
+        position: relative;
+        top: 120px;
+    }
+}
 
 @media(max-width: 786px){
     .header-content p:nth-of-type(1){
         font-size:1.02rem;
+        
     }
 
     .container{
@@ -236,5 +331,64 @@ a{
         margin-left: 5px;
         margin-right: 5px;
         font-size: 1.2rem;
+    }
+}
+
+
+@media(max-width: 1184px){
+    .container-movie img{
+        width: 100%;
+    }
+}
+
+@media(max-width: 864px){
+    .container-movie h3{
+        text-align: center;
+    }
+    
+    .container-movie p{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+
+@media(max-width: 511px){
+    .container-movie p{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media(max-width: 814px){
+    .ent-content h3{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .ent-content p{
+        margin-right: 4em;
+        margin-left: 4em;
+    }
+}
+
+@media(max-width: 570px){
+    .ent-content h3{
+        font-size: 1.3rem;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .ent-content p{
+        font-size: 1rem;
+        margin-right: 0.9em;
+        margin-left: 0.9em;
+    }
+}
+
+@media(max-width: 312px){
+    .ent-content p{
+        font-size: 0.8rem;
+        margin-right: 0.9em;
+        margin-left: 0.9em;
     }
 }
